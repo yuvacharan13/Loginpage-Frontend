@@ -12,16 +12,23 @@
   line-height: 1.5;
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  /* background-color: #424874; */
+  background-color: #424874;
   border-color: #424874;
   margin-top: 300px !important;
   margin-left: 20% !important;
   margin-right: 20% !important;
   /* margin: 50px; */
   cursor: pointer;
-  /* color: #ffdc34; */
+  color: #ffdc34;
 }
 
 .form-control{
   margin: 10% 0 !important;
+}
+
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
 }

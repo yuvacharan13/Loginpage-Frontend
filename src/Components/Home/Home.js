@@ -8,7 +8,7 @@ const Home = () => {
     // const [count, SetCount] = useState(0)
 
     useEffect(() => {
-        fetch('http://localhost:4040/fetch')
+        fetch('https://login-page-data.herokuapp.com/fetch')
       .then(response => response.json())
       .then(response => {Setbuttonstatus(response); })
       
@@ -27,7 +27,7 @@ const Home = () => {
 
     const handleButton1 = () => {
         console.log(buttonstatus.status.id)
-        fetch(`http://localhost:4040/update/${buttonstatus.status.id}`, {
+        fetch(`https://login-page-data.herokuapp.com/update/${buttonstatus.status.id}`, {
         method: 'PUT',
         body: JSON.stringify({status : { "id": 1, "button1": true , "button2": false}}),
         headers: {
@@ -44,7 +44,7 @@ const Home = () => {
 
     const handleButton2 = () => {
         console.log(buttonstatus.status.id)
-        fetch(`http://localhost:4040/update/${buttonstatus.status.id}`, {
+        fetch(`https://login-page-data.herokuapp.com/update/${buttonstatus.status.id}`, {
         method: 'PUT',
         body: JSON.stringify({status : { "id": 1, "button1": false , "button2": true}}),
         headers: {
